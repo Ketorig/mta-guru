@@ -1,0 +1,13 @@
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Content-Type = "text/plain"
+```
+
+Und stelle sicher dass deine Repo-Struktur so aussieht:
+```
+/
+├── index.html
+├── netlify.toml
+└── .well-known/
+    └── mta-sts.txt
